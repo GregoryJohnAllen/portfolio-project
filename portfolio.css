@@ -4,7 +4,7 @@ h1 {
 }
 
 .title-container {
-  height: 500px;
+  height: 650px;
   background-image: url("https://images.unsplash.com/photo-1545112719-ce81d7de0b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=811&q=80");
   background-size: cover;
   background-attachment: fixed;
@@ -151,7 +151,7 @@ h1 {
 
 .main-section1 {
   margin: 0 0;
-  background-image: url("https://images.unsplash.com/photo-1535478044878-3ed83d5456ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=769&q=80");
+  background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=823&q=80");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -173,35 +173,40 @@ h1 {
   background-position: center;
 }
 
-#language-logo {
-  display: flex;
-  max-width: 100%;
-  align-items: center;
+#about-me-container {
   justify-content: center;
-  mix-blend-mode: multiply;
-  margin-top: 25px;
-  margin-left: 25px;
-}
-
-.about-me {
-  margin-top: 15%;
-  margin-bottom: 15%;
-  margin-right: 20%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-  color: rgb(129, 210, 212);
+  align-items: center;
 }
 
 .row a:hover {
   color: gold;
 }
 
+.navbar li:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
 .card {
   margin-top: 50px;
   margin-bottom: 50px;
+  -moz-box-shadow: 3px 3px 5px 6px rgb(18, 236, 243);
+  -webkit-box-shadow: 3px 3px 5px 6px rgb(18, 236, 243);
+  box-shadow: 3px 3px 5px 6px rgb(18, 236, 243);
 }
 
 .card:hover{
   transform: scale(1.1);
   transition: all ease 500ms;
+  -moz-box-shadow: 6px 6px 10px 12px rgb(198, 18, 243);
+  -webkit-box-shadow: 6px 6px 10px 12px rgb(198, 18, 243);
+  box-shadow: 6px 6px 10px 12px rgb(198, 18, 243);
+}
+
+#about-me:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
+  -moz-box-shadow: 6px 6px 10px 12px gold;
+  -webkit-box-shadow: 6px 6px 10px 12px gold;
+  box-shadow: 6px 6px 10px 12px gold;
 }
