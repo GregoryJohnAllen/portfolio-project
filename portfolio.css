@@ -1,0 +1,207 @@
+body,
+h1 {
+  margin: 0;
+}
+
+.title-container {
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1545112719-ce81d7de0b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=811&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#title {
+  display: flex; /*If display: flex; is not put in, it will be stuck in top left corner*/
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(60, 233, 233);
+}
+
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+.tossing {
+  animation-name: tossing;
+  -webkit-animation-name: tossing;
+
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+  0% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+
+@-webkit-keyframes tossing {
+  0% {
+    -webkit-transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
+}
+
+.navbar-container {
+  height: 85px;
+  background-image: linear-gradient(rgb(37, 34, 34), rgb(194, 20, 156));
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(60, 233, 233);
+  margin-top: 0;
+}
+
+.navbar li {
+  padding: 0 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar :hover {
+  color: gold;
+}
+
+.side-bar {
+  height: 140px;
+  width: 140px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  margin: 20px 20px;
+  padding: 10px 10px 10px 10px;
+  mix-blend-mode: multiply;
+}
+
+.side-bar a {
+  text-decoration: none;
+  /* color: rgb(250, 250, 250); */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+}
+
+.side-bar a:hover {
+  color: gold;
+}
+
+.main-section1 {
+  margin: 0 0;
+  background-image: url("https://images.unsplash.com/photo-1535478044878-3ed83d5456ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=769&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.break-container {
+  height: 175px;
+  background-image: url("https://images.unsplash.com/photo-1548031061-76f86064a5ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main-section2 {
+  margin: 0 0;
+  background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=823&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#language-logo {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.about-me {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-right: 20%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: rgb(129, 210, 212);
+}
+
+.row a:hover {
+  color: gold;
+}
+
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
