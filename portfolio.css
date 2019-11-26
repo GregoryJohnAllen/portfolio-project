@@ -156,7 +156,9 @@ li :hover {
 
 .logo {
   justify-content: center;
+  align-items: center;
 }
+
 
 .main-section2 {
   margin: 0 0;
@@ -206,6 +208,7 @@ li :hover {
 
 body{
   background: -webkit-linear-gradient(left, #1100ff, #c315f8);
+  margin: 0 0px;
 }
 .contact-form{
   background: #fff;
