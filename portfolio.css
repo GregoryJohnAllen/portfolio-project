@@ -146,6 +146,15 @@ li :hover {
   background-position: center;
 }
 
+#profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+}
+
 .break-container {
   height: 150px;
   background-image: url("https://images.unsplash.com/photo-1518839283416-0cc546d12a97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=785&q=80");
